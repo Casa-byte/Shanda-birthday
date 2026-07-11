@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Birthday, Bestie 🤍</title>
+<title>Happy Birthday, Shand 🤍</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -780,8 +780,8 @@ footer.made-with-love{
   <div class="aurora"><span></span><span></span><span></span><span></span></div>
   <div class="particles" id="landingParticles"></div>
   <div class="landing-content">
-    <h1 class="glow-text">Happy Birthday,<br>Bestie 🤍</h1>
-    <p class="tagline">"I made this little world just for you."</p>
+    <h1 class="glow-text">Happy Birthday,<br>Shand 🎂</h1>
+    <p class="tagline">"i made this little world just for you."</p>
     <button class="glow-btn" id="openGiftBtn">🎁 Open Your Gift</button>
   </div>
 </div>
@@ -806,7 +806,7 @@ footer.made-with-love{
   <!-- ============ HERO SECTION ============ -->
   <section id="hero">
     <div class="particles" id="heroParticles"></div>
-    <h2 class="section-title fade-in-up">For My Favorite Person 🎂</h2>
+    <h2 class="section-title fade-in-up">For My Online Bestie 🎂</h2>
     <p class="section-sub fade-in-up">A whole little world, baked with love, sprinkled with memories.</p>
 
     <div class="cake-wrap fade-in-up">
@@ -854,8 +854,8 @@ footer.made-with-love{
 
     <div class="glass-card final-hidden-msg" id="finalHiddenMsg">
       Maybe we're miles apart, but thank you for becoming one of my favorite people.<br><br>
-      Happy Birthday, Bestie.<br>
-      I hope one day we'll finally meet in person. 🤍✨
+      Happy Birthday, Shan.<br>
+      I hope one day we're rally meet in person. 🤍✨
     </div>
   </section>
 
@@ -890,7 +890,7 @@ footer.made-with-love{
 
   <!-- ============ MINI GAME SECTION ============ -->
   <section id="game">
-    <h2 class="section-title fade-in-up">Catch Falling Hearts ❤️</h2>
+    <h2 class="section-title fade-in-up">Catch Falling Birthday cake 🎂</h2>
     <p class="section-sub fade-in-up">30 seconds. Catch as many as you can. No pressure (okay, a little pressure).</p>
 
     <div class="game-frame" id="gameFrame">
@@ -1071,13 +1071,9 @@ musicToggle.addEventListener('click', ()=>{
 ============================================================ */
 const letterContent = `My dearest bestie,
 
-I don't really know how to put "I'm so glad the internet accidentally gave me a best friend" into a normal sentence, so I made you this whole website instead. Totally normal behavior. No notes.
-
-You've somehow become the person I text the dumbest thoughts to at 2am, the one who gets my weird humor without an explanation, and the one who feels like home even though we've never shared the same time zone.
-
-Thank you for the laughs, the late night talks, the unsolicited voice memos, and for never once making the distance feel like a big deal. You just showed up, again and again, and that's rare and it matters.
-
-So here's to another year of chaos, comfort, and everything in between.
+I don't really know how to put "HAPPY BIRTHDAY TO YOUUUU 🎉  
+Walaupun kita ketemunya online, Thanks udah jadi comfort person aku di online. kindness kamu kerasa nyata dan deket banget. Thanks for being my friend
+I hope hari ini penuh cake, good news, dan orang-orang yang sayang kamu sama kayak kamu sayang mereka. Ngl, growing older looks so good on u. Gak sabar celebrate birthday bareng lagi, even if cuma lewat chat hehe
 
 Thank you for existing.
 Happy Birthday.
@@ -1113,16 +1109,27 @@ letterObserver.observe(letterSection);
    SOUNDTRACK SECTION
 ============================================================ */
 const songs = [
-  {title:"Late Night Talks", artist:"Us, Probably", duration:"3:14", note:"🎵 This reminds me of those random conversations that somehow lasted until midnight."},
-  {title:"Golden Hour", artist:"Comfort & Co.", duration:"2:58", note:"🎵 Some people become comfort without even realizing it."},
-  {title:"Home", artist:"Not a Place", duration:"3:41", note:"🎵 Distance never stopped this friendship from feeling close."},
-  {title:"Until We Meet Someday", artist:"The Long Distance Club", duration:"3:05", note:"🎵 Maybe someday we'll laugh about how we started as online strangers."},
-  {title:"Best Part", artist:"Ordinary Days", duration:"2:47", note:"🎵 One of the best parts of my days is talking to you."},
-  {title:"Inside Jokes", artist:"Only We'd Get It", duration:"3:22", note:"🎵 We have a whole language nobody else understands, and I love that."},
-  {title:"3AM Voice Notes", artist:"Sleep Schedule Who?", duration:"2:39", note:"🎵 The messages that made no sense but somehow made my whole week."},
-  {title:"Different Time Zones", artist:"Still Close", duration:"3:33", note:"🎵 It's wild how someone hours away can still feel like they're right here."},
-  {title:"Chaos, Fondly", artist:"My Favorite Person", duration:"3:02", note:"🎵 You're a mess sometimes. My favorite kind of mess."},
-  {title:"See You Someday", artist:"The Hopeful Ones", duration:"4:01", note:"🎵 One day this will just be a story we tell about how we finally met."}
+  {
+    title: "Panjang Umur", 
+    artist: "Chintya Gabrielle", 
+    duration: "2:34", 
+    note: "🎵 For you Shan, this song for ur day XD.",
+    src: "Chintya Gabriella - Panjang Umur (Official Music Video).m4a" 
+  },
+  {
+    title: "Golden Hour", 
+    artist: "JVKE", 
+    duration: "3:29", 
+    note: "🎵 Some people become comfort without even realizing it.",
+    src: "golden hour - JVKE (320).mp3" 
+  },
+  {
+    title: "Ribs", 
+    artist: "Lorde", 
+    duration: "4:20", 
+    note: "🎵 Distance never stopped this friendship from feeling close.",
+    src: "Ribs - Lorde 4qaeoz_7cyE.m4a" 
+  },
 ];
 
 const songListEl = document.getElementById('songList');
@@ -1130,6 +1137,7 @@ const vinylEl = document.getElementById('vinyl');
 const visualizerEl = document.getElementById('visualizer');
 const songNoteEl = document.getElementById('songNote');
 const finalHiddenMsg = document.getElementById('finalHiddenMsg');
+const audioPlayer = document.getElementById('audioPlayer');
 
 songs.forEach((song, idx)=>{
   const card = document.createElement('div');
@@ -1175,6 +1183,10 @@ function playSong(idx, cardEl){
   visualizerEl.classList.remove('paused');
   songNoteEl.textContent = songs[idx].note;
   spawnFloatingNotes(cardEl);
+  if(songs[idx].src) {
+    audioPlayer.src = songs[idx].src;
+    audioPlayer.play();
+  }
   if(idx === songs.length - 1){
     setTimeout(()=>{ finalHiddenMsg.classList.add('show'); }, 900);
   }
@@ -1185,11 +1197,9 @@ function playSong(idx, cardEl){
 ============================================================ */
 const reasons = [
   {emoji:'💛', text:"You're kind."},
-  {emoji:'😂', text:"You're funny."},
-  {emoji:'🤍', text:"You're always there."},
-  {emoji:'🌤️', text:"You make ordinary days brighter."},
   {emoji:'✨', text:"You're irreplaceable."},
   {emoji:'🌀', text:"You're my favorite chaos."}
+  {emoji:'🍪', text:"You're Sweet."}
 ];
 const reasonsGrid = document.getElementById('reasonsGrid');
 reasons.forEach(r=>{
@@ -1268,17 +1278,17 @@ const gameResultEl = document.getElementById('gameResult');
 const startGameBtn = document.getElementById('startGameBtn');
 let gameActive = false;
 let score = 0;
-let timeLeft = 30;
+let timeLeft = 15;
 let gameInterval, spawnInterval;
 
 startGameBtn.addEventListener('click', ()=>{
   if(gameActive) return;
   gameActive = true;
   score = 0;
-  timeLeft = 30;
+  timeLeft = 15;
   gameResultEl.textContent = '';
   gameScoreEl.textContent = 'Score: 0';
-  gameTimeEl.textContent = 'Time: 30';
+  gameTimeEl.textContent = 'Time: 15';
   gameFrame.querySelectorAll('.falling-heart').forEach(h=>h.remove());
   startGameBtn.disabled = true;
 
@@ -1294,7 +1304,7 @@ function spawnHeart(){
   if(!gameActive) return;
   const h = document.createElement('div');
   h.className='falling-heart';
-  h.textContent = pick(['❤️','💕','💖','🤍']);
+  h.textContent = pick(['🎂','🕯️','🎊','🎉']);
   h.style.left = rand(5,88)+'%';
   const duration = rand(3,5);
   h.style.animationDuration = duration+'s';
