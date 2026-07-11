@@ -890,13 +890,13 @@ footer.made-with-love{
 
   <!-- ============ MINI GAME SECTION ============ -->
   <section id="game">
-    <h2 class="section-title fade-in-up">Catch Falling Birthday cake 🎂</h2>
-    <p class="section-sub fade-in-up">30 seconds. Catch as many as you can. No pressure (okay, a little pressure).</p>
+    <h2 class="section-title fade-in-up">Catch Falling Heart 💖</h2>
+    <p class="section-sub fade-in-up">15 seconds. Catch as many as you can. No pressure (okay, a little pressure).</p>
 
     <div class="game-frame" id="gameFrame">
       <div class="game-hud">
         <span id="gameScore">Score: 0</span>
-        <span id="gameTime">Time: 30</span>
+        <span id="gameTime">Time: 15</span>
       </div>
     </div>
     <button class="glow-btn fade-in-up" id="startGameBtn" style="margin-top:26px;">💗 Start Game</button>
@@ -1304,7 +1304,7 @@ function spawnHeart(){
   if(!gameActive) return;
   const h = document.createElement('div');
   h.className='falling-heart';
-  h.textContent = pick(['🎂','🕯️','🎊','🎉']);
+  h.textContent = pick(['💝','🤍','💖','💘']);
   h.style.left = rand(5,88)+'%';
   const duration = rand(3,5);
   h.style.animationDuration = duration+'s';
