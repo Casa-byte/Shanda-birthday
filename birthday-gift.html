@@ -925,6 +925,11 @@ footer.made-with-love{
     <button class="popup-close" id="popupClose">close</button>
   </div>
 </div>
+<footer class="made-with-love">
+  made with 🤍 for my favorite person on the internet
+</footer>
+
+<audio id="audioPlayer"></audio>
 
 <script>
 /* ============================================================
@@ -1114,21 +1119,21 @@ const songs = [
     artist: "Chintya Gabrielle", 
     duration: "2:34", 
     note: "🎵 For you Shan, this song for ur day XD.",
-    src: "Chintya Gabriella - Panjang Umur (Official Music Video).m4a" 
+    src: "lagu1.m4a" 
   },
   {
     title: "Golden Hour", 
     artist: "JVKE", 
     duration: "3:29", 
     note: "🎵 Some people become comfort without even realizing it.",
-    src: "golden hour - JVKE (320).mp3" 
+    src: "lagu2.mp3" 
   },
   {
     title: "Ribs", 
     artist: "Lorde", 
     duration: "4:20", 
     note: "🎵 Distance never stopped this friendship from feeling close.",
-    src: "Ribs - Lorde 4qaeoz_7cyE.m4a" 
+    src: "Lagu3.m4a" 
   },
 ];
 
@@ -1198,7 +1203,7 @@ function playSong(idx, cardEl){
 const reasons = [
   {emoji:'💛', text:"You're kind."},
   {emoji:'✨', text:"You're irreplaceable."},
-  {emoji:'🌀', text:"You're my favorite chaos."}
+  {emoji:'🌀', text:"You're my favorite chaos."},
   {emoji:'🍪', text:"You're Sweet."}
 ];
 const reasonsGrid = document.getElementById('reasonsGrid');
@@ -1431,6 +1436,5 @@ document.querySelector('.landing-content h1').addEventListener('click', ()=>{
   }
 });
 </script>
-<audio id="audioPlayer"></audio>
 </body>
 </html>
