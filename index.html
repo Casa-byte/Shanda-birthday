@@ -1190,8 +1190,13 @@ function playSong(idx, cardEl){
   songNoteEl.textContent = songs[idx].note;
   spawnFloatingNotes(cardEl);
   if(songs[idx].src) {
-    audioPlayer.src = songs[idx].src;
-    audioPlayer.play();
+    audioPlayer.pause();
+audioPlayer.currentTime = 0;
+audioPlayer.src = songs[idx].src;
+
+audioPlayer.load();
+
+audioPlayer.play().catch(console.error);
   }
   if(idx === songs.length - 1){
     setTimeout(()=>{ finalHiddenMsg.classList.add('show'); }, 900);
