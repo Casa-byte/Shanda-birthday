@@ -985,14 +985,20 @@ spawnParticles(document.getElementById('finalParticles'), 20, ['✨','⭐','🤍
 ============================================================ */
 const landing = document.getElementById('landing');
 const mainSite = document.getElementById('main-site');
-document.getElementById('openGiftBtn').addEventListener('click', ()=>{
+document.getElementById('openGiftBtn').addEventListener('click', () => {
   landing.classList.add('hide');
-  setTimeout(()=>{
-    landing.style.display='none';
+
+  setTimeout(() => {
+    landing.style.display = 'none';
     mainSite.classList.add('show');
+
     document.getElementById('hero').scrollIntoView({
-  behavior: 'smooth'
-});
+      behavior: "smooth"
+    });
+
+  }, 1200);   
+
+});           
 
 /* ============================================================
    SCROLL FADE-IN + DOT NAV ACTIVE STATE
@@ -1198,7 +1204,7 @@ function playSong(idx, cardEl){
 const reasons = [
   {emoji:'💛', text:"You're kind."},
   {emoji:'✨', text:"You're irreplaceable."},
-  {emoji:'🌀', text:"You're my favorite chaos."}
+  {emoji:'🌀', text:"You're my favorite chaos."},
   {emoji:'🍪', text:"You're Sweet."}
 ];
 const reasonsGrid = document.getElementById('reasonsGrid');
